@@ -86,8 +86,29 @@ Start the frontend server:
 Start the backend server:
 ```bash
   go run backend/main.go
-
 ```
+
+## Design and Development Decisions
+### Multi-Platform Analytics
+
+The platform supports major social media platforms, including Facebook, Twitter, Instagram, LinkedIn, YouTube, and Telegram. Users can seamlessly track and analyze metrics across these platforms.
+
+### Data Visualization
+
+Analytics data is presented through charts and graphs, providing users with a visually appealing and easy-to-understand representation of their social media performance.
+
+### User Authentication and Security
+
+User authentication is implemented securely to protect sensitive user data. HTTPS, data encryption, and secure API endpoints are employed to ensure a secure environment.
+
+### Scalability and Performance
+
+Cassandra is chosen for the backend database due to its scalability and performance benefits, enabling the system to handle large volumes of social media data efficiently.
+
+### User-Friendly Interface
+
+The frontend is designed with an intuitive and user-friendly interface, allowing users to navigate seamlessly and interact with analytics features effortlessly.
+
 
 
     

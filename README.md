@@ -1,6 +1,7 @@
 
 # Social Media Analytics Platform
 
+## Overview
 Welcome to the Social Media Analytics Platform repository! This project is a full-stack solution developed to empower users in tracking, analyzing, and optimizing their social media presence. The platform is designed with security, performance, and user experience in mind.
 
 

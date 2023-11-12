@@ -37,39 +37,39 @@ Frontend: React js(JS,CSS)
 
 
 
-Login 
+# Login 
 ![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/login.png)
 
 
 
 
-Home page
+# Home page
 ![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/home.png)
 
 
 
 
-Social media Analysis
+# Social media Analysis
 ![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/analysis1.png)
 ![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/analysis2.png)
 
 
 
 
-Drawer containing Pofile,Home,Logout
+# Drawer containing Pofile,Home,Logout
 ![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/drawer.png)
 
 
 
 
-Profile page
+# Profile page
 ![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/profile.png)
 
 
 
 
 
-Edit Profile
+# Edit Profile
 ![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/editprofile.png)
 
 

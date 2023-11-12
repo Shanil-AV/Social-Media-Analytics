@@ -31,11 +31,46 @@ Frontend: React js(JS,CSS)
 
 
 ## Screenshots
+ Register User name and Password
+![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/register.png)
 
+
+
+
+Login 
 ![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/login.png)
 
-![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/register.png)
+
+
+
+Home page
 ![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/home.png)
+
+
+
+
+Social media Analysis
+![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/analysis1.png)
+![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/analysis2.png)
+
+
+
+
+Drawer containing Pofile,Home,Logout
+![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/drawer.png)
+
+
+
+
+Profile page
+![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/profile.png)
+
+
+
+
+
+Edit Profile
+![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/editprofile.png)
 
 
 ## Setup

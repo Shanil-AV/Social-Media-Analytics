@@ -1,4 +1,4 @@
-// analyticsmodel.go
+
 
 package models
 

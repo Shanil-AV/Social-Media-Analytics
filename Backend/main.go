@@ -1,34 +1,33 @@
 package main
 
 import (
-	
 	"fmt"
-	"net/http"
 	"github.com/GoAdminGroup/go-admin/engine"
 	"github.com/GoAdminGroup/go-admin/modules/config"
 	"github.com/GoAdminGroup/go-admin/modules/language"
 	"github.com/GoAdminGroup/themes/adminlte"
 	"github.com/gin-gonic/gin"
-	_ "github.com/mattn/go-sqlite3"
+	"github.com/gocql/gocql"
+	"net/http"
 )
 
 func main() {
-	// Initialize a Gin engine
+
 	router := gin.Default()
 
-	// Initialize GoAdmin
 	admin := engine.Default()
 
-	// Configuration for GoAdmin
 	cfg := &config.Config{
 		Databases: config.DatabaseList{
 			"default": {
-				Driver: config.DriverSqlite,
-				File:   "./your_database_name.db", // Change the file name accordingly
-				ConnMaxLifetime: 0,                 // Set to 0 for SQLite
-				MaxIdleConns:    0,                 // Set to 0 for SQLite
-				MaxOpenConns:    0,                 // Set to 0 for SQLite
-				
+				Host:   "127.0.0.1",
+				Port:   "9042",
+				User:   "your_cassandra_user",
+				Pwd:    "your_cassandra_password",
+				Name:   "your_keyspace_name",
+				Driver: "cql",
+				Dsn:    "127.0.0.1:9042",
+				Params: map[string]string{},
 			},
 		},
 		UrlPrefix: "admin",
@@ -38,16 +37,21 @@ func main() {
 		Theme:     adminlte.Adminlte.ThemeName,
 	}
 
-	// Initialize routes for GoAdmin
 	admin.AddConfig(cfg).
-		AddGenerators( /* Add your generators here */ ).
+		AddGenerators().
 		Use(router)
 
-	// Setup an HTTP server on port 3000
 	router.GET("/", func(c *gin.Context) {
 		fmt.Fprint(c.Writer, "Hello, World! This is the main page.")
 	})
 
-	// Start the server
 	http.ListenAndServe(":3000", router)
+}
+
+// initCassandraConnection initializes a connection to Cassandra and returns a session
+func initCassandraConnection() (interface{}, error) {
+	cluster := gocql.NewCluster("127.0.0.1")
+	cluster.Keyspace = "your_keyspace_name"
+	session, err := cluster.CreateSession()
+	return session, err
 }

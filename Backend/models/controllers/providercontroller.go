@@ -1,4 +1,3 @@
-// controllers/providercontroller.go
 
 package controllers
 
@@ -14,7 +13,7 @@ type ProviderController struct {
 	Session *gocql.Session
 }
 
-// NewProviderController creates a new instance of ProviderController with a Cassandra session
+// NewProviderController creates a new instance of ProviderController 
 func NewProviderController(session *gocql.Session) *ProviderController {
 	return &ProviderController{Session: session}
 }

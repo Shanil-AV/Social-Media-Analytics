@@ -1,8 +1,7 @@
-// providermodel.go
 
 package models
 
-// Provider struct represents the social media account provider model
+// Provider struct represents the social media account provider .
 type Provider struct {
 	Name     string      `json:"name"`
 	Username string      `json:"username"`
@@ -13,37 +12,37 @@ type Provider struct {
 // InstagramProvider struct represents details for Instagram provider
 type InstagramProvider struct {
 	ProfileURL string `json:"profile_url"`
-	// Add other Instagram-specific fields
+	
 }
 
 // YouTubeProvider struct represents details for YouTube provider
 type YouTubeProvider struct {
 	ChannelURL string `json:"channel_url"`
-	// Add other YouTube-specific fields
+	
 }
 
 // TelegramProvider struct represents details for Telegram provider
 type TelegramProvider struct {
 	ChatID string `json:"chat_id"`
-	// Add other Telegram-specific fields
+	
 }
 
 // FacebookProvider struct represents details for Facebook provider
 type FacebookProvider struct {
 	ProfileURL string `json:"profile_url"`
-	// Add other Facebook-specific fields
+	
 }
 
 // LinkedInProvider struct represents details for LinkedIn provider
 type LinkedInProvider struct {
 	ProfileURL string `json:"profile_url"`
-	// Add other LinkedIn-specific fields
+	
 }
 
 // TwitterProvider struct represents details for Twitter provider
 type TwitterProvider struct {
 	ProfileURL string `json:"profile_url"`
-	// Add other Twitter-specific fields
+
 }
 
 // NewProvider creates a new Provider instance with the specified social media platform

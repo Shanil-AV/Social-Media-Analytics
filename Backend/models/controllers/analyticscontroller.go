@@ -7,9 +7,9 @@ import (
 	"net/http"
 )
 
-// AnalyticsController represents the controller for managing analytics
+
 type AnalyticsController struct {
-	// You can add any dependencies or services needed by the controller
+	
 }
 
 // NewAnalyticsController creates a new instance of AnalyticsController
@@ -32,8 +32,7 @@ func (controller *AnalyticsController) UpdateAnalyticsHandler(c *gin.Context) {
 		return
 	}
 
-	// You can retrieve the existing analytics data from a database or other storage
-	// For this example, we create a new instance each time
+	
 	existingAnalytics := models.NewAnalytics()
 
 	// Update the analytics data based on the request
@@ -42,7 +41,7 @@ func (controller *AnalyticsController) UpdateAnalyticsHandler(c *gin.Context) {
 	existingAnalytics.AddPosts(analyticsRequest.Month, analyticsRequest.Posts)
 	existingAnalytics.AddFollowers(analyticsRequest.Month, analyticsRequest.Followers)
 
-	// You can add additional logic here, such as saving the updated analytics data
+
 
 	c.JSON(http.StatusOK, gin.H{"message": "Analytics updated successfully", "analytics": existingAnalytics})
 }

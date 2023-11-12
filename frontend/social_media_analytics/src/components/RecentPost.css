@@ -1,0 +1,37 @@
+
+.post-card {
+    background-color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 50%;
+    height: 1000px;
+    margin-left: 25px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .post-card:hover {
+    box-shadow: 0 8px 16px rgba(142, 62, 62, 0.2);
+  }
+  
+  .post-title {
+    font-size: 20px;
+    color: #dac2c2;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .post-content {
+    font-size: 25px;
+    color: #555;
+    margin: 0;
+  }
+  
+  .post-date {
+    font-size: 25px;
+    color: #f4f3f3;
+    margin: 0;
+  }
+  

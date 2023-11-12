@@ -1,0 +1,78 @@
+.form {
+    max-width: 350px;
+    max-height: 550px;
+    margin: 0 auto;
+    padding: 80px;
+   
+    border-radius: 10px;
+    margin-top: 300px;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #2288db, #419644);
+  }
+  
+  .input-container {
+    margin-bottom: 5px;
+  }
+  
+  label {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="password"] ,
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #4caf50;
+    border-radius: 10px;
+   color: rgb(16, 17, 17);
+  }
+  body {
+    background-image: url('D:\social\social_media_analytics\src\images\login.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    text-align: center;
+
+   
+  }
+  
+  input[type="submit"] {
+    background-color:  #2588d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a05f;
+  }
+  .right-corner-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .signup-button,
+  .register-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .signup-button:hover,
+  .register-button:hover {
+    background-color: #45a049;
+  }

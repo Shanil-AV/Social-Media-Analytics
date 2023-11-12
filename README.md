@@ -32,9 +32,10 @@ Frontend: React js(JS,CSS)
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/login.png)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/register.png)
+![App Screenshot](https://github.com/Shanil-AV/Social-Media-Analytics/blob/master/screenshots/home.png)
 
 
 ## Setup
